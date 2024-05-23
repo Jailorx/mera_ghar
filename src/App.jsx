@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <div className="h-screen w-custom-full mx-auto px-20">
+    <div className="w-full mx-auto px-5 md:px-20">
       <Navbar />
     </div>
   );
