@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { IoMenu, IoClose } from "react-icons/io5";
 import Logo from "../../assets/mera-ghar-logo.png";
+import WebsiteNavbar from "./WebsiteNavbar/WebsiteNavbar";
+import MobileNavbar from "./MobileNavbar/MobileNavbar";
 
-const Navbar = () => {
+const Header = () => {
   const [isMobileMenu, setIsMobileMenu] = useState(false);
 
   return (
@@ -14,44 +16,7 @@ const Navbar = () => {
             <img src={Logo} alt="mera_ghar_logo" width="100px" />
           </Link>
           {/* Website navigation */}
-          <div className="hidden sm:flex">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                `${
-                  isActive
-                    ? "text-primary-custom-indigo-700 font-bold text-xl"
-                    : "text-black rounded-xl hover:bg-primary-custom-indigo-100/20 transition-colors ease-in-out"
-                } p-4`
-              }
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                `${
-                  isActive
-                    ? "text-primary-custom-indigo-700 font-bold text-xl"
-                    : "text-black rounded-xl hover:bg-primary-custom-indigo-100/20 transition-colors ease-in-out"
-                } p-4`
-              }
-            >
-              About
-            </NavLink>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) =>
-                `${
-                  isActive
-                    ? "text-primary-custom-indigo-700 font-bold text-xl"
-                    : "text-black rounded-xl hover:bg-primary-custom-indigo-100/20 transition-colors ease-in-out"
-                } p-4`
-              }
-            >
-              Contact
-            </NavLink>
-          </div>
+          <WebsiteNavbar />
         </div>
         {/* Mobile navigation */}
         <div
@@ -80,51 +45,10 @@ const Navbar = () => {
             : "max-h-0 opacity-0 overflow-hidden"
         }`}
       >
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            `${
-              isActive
-                ? "text-primary-custom-indigo-100 font-bold text-xl"
-                : "text-white rounded-xl hover:bg-primary-custom-indigo-100/20 transition-colors ease-in-out"
-            } p-4`
-          }
-        >
-          Home
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            `${
-              isActive
-                ? "text-primary-custom-indigo-100 font-bold text-xl"
-                : "text-white rounded-xl hover:bg-primary-custom-indigo-100/20 transition-colors ease-in-out"
-            } p-4`
-          }
-        >
-          About
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            `${
-              isActive
-                ? "text-primary-custom-indigo-100 font-bold text-xl"
-                : "text-white rounded-xl hover:bg-primary-custom-indigo-100/20 transition-colors ease-in-out"
-            } p-4`
-          }
-        >
-          Contact
-        </NavLink>
-        <Link
-          to="/signin"
-          className="px-5 py-2 bg-white text-primary-custom-indigo-700 font-bold rounded-lg"
-        >
-          Sign In
-        </Link>
+        <MobileNavbar />
       </div>
     </>
   );
 };
 
-export default Navbar;
+export default Header;
