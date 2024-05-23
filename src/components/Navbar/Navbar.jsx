@@ -14,8 +14,8 @@ const Navbar = () => {
             `${
               isActive
                 ? "text-primary-custom-indigo-700 font-bold text-xl"
-                : "text-black"
-            }`
+                : "text-black rounded-xl hover:bg-primary-custom-indigo-100/20 transition-colors ease-in-out"
+            } p-4`
           }
         >
           Home
@@ -26,8 +26,8 @@ const Navbar = () => {
             `${
               isActive
                 ? "text-primary-custom-indigo-700 font-bold text-xl"
-                : "text-black"
-            }`
+                : "text-black rounded-xl hover:bg-primary-custom-indigo-100/20 transition-colors ease-in-out"
+            } p-4 `
           }
         >
           About
@@ -38,8 +38,8 @@ const Navbar = () => {
             `${
               isActive
                 ? "text-primary-custom-indigo-700 font-bold text-xl"
-                : "text-black"
-            }`
+                : "text-black rounded-xl hover:bg-primary-custom-indigo-100/20 transition-colors ease-in-out"
+            } p-4`
           }
         >
           Contact
@@ -48,7 +48,7 @@ const Navbar = () => {
       <div className="flex items-center gap-5">
         <Link
           to="/signin"
-          className="px-5 py-2  bg-primary-custom-indigo-700 text-white font-bold rounded-lg "
+          className="px-5 py-2  bg-primary-custom-indigo-700 text-white font-bold rounded-lg"
         >
           Sign In
         </Link>
