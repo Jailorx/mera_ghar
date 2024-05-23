@@ -24,7 +24,7 @@ const SearchBar = () => {
     setSearchQuery({ ...searchQuery, [target]: value });
   };
   return (
-    <div className=" flex flex-col my-20 gap-5  bg-primary-custom-indigo-200 px-10 py-5 rounded-3xl">
+    <div className=" flex flex-col my-20 gap-5  bg-primary-custom-indigo-100 px-10 py-5 rounded-3xl">
       <div className="flex gap-2">
         {types.map((type) => (
           <button
@@ -34,7 +34,7 @@ const SearchBar = () => {
               searchQuery.type === type
                 ? "bg-primary-custom-indigo-600 font-bold text-white rounded-md"
                 : "bg-transparent"
-            } px-4 py-2 `}
+            } px-4 py-2`}
           >
             {type.toUpperCase()}
           </button>

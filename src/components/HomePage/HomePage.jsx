@@ -4,7 +4,7 @@ import SearchBar from "./SearchBar/SearchBar";
 
 const HomePage = () => {
   return (
-    <main className="flex flex-col w-full p-10">
+    <main className="flex flex-col w-full p-10 ">
       <section>
         <h1 className="font-bold  text-primary-custom-indigo-700 text-5xl leading-snug">
           Find your dream home
