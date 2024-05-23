@@ -1,5 +1,5 @@
 import Logo from "../../assets/mera-ghar-logo.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,9 +8,42 @@ const Navbar = () => {
         <Link to="/">
           <img src={Logo} alt="mera_ghar_logo" width="100px" />
         </Link>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `${
+              isActive
+                ? "text-primary-custom-indigo-700 font-bold text-xl"
+                : "text-black"
+            }`
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `${
+              isActive
+                ? "text-primary-custom-indigo-700 font-bold text-xl"
+                : "text-black"
+            }`
+          }
+        >
+          About
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            `${
+              isActive
+                ? "text-primary-custom-indigo-700 font-bold text-xl"
+                : "text-black"
+            }`
+          }
+        >
+          Contact
+        </NavLink>
       </div>
       <div className="flex items-center gap-5">
         <Link
