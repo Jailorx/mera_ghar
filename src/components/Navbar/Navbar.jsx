@@ -1,23 +1,24 @@
 import Logo from "../../assets/mera-ghar-logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="sticky top-0 flex justify-between items-center">
       <div className="flex items-center gap-10 ">
-        <a href="/">
+        <Link to="/">
           <img src={Logo} alt="mera_ghar_logo" width="100px" />
-        </a>
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
+        </Link>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
       </div>
       <div className="flex items-center gap-5">
-        <a
-          href="/"
+        <Link
+          to="/signin"
           className="px-5 py-2  bg-primary-custom-indigo-700 text-white font-bold rounded-lg "
         >
           Sign In
-        </a>
+        </Link>
       </div>
     </nav>
   );
