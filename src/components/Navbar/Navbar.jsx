@@ -3,7 +3,7 @@ import Logo from "../../assets/mera-ghar-logo.png";
 const Navbar = () => {
   return (
     <nav className="sticky top-0 flex justify-between items-center">
-      <div className="flex items-center gap-10">
+      <div className="flex items-center gap-10 ">
         <a href="/">
           <img src={Logo} alt="mera_ghar_logo" width="100px" />
         </a>
