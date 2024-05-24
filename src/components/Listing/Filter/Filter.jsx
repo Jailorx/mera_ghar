@@ -15,7 +15,7 @@ const Filter = () => {
           id="location"
           name="location"
           placeholder="City Location"
-          className="px-4 py-2  focus:outline-none border-2 border-primary-custom-indigo-700 rounded-lg"
+          className="px-4 py-2  focus:outline-none border-2 border-primary-custom-indigo-700 rounded-lg w-80"
         />
       </div>
       <div className="flex flex-col">
@@ -27,7 +27,7 @@ const Filter = () => {
           id="minPrice"
           name="minPrice"
           placeholder="any"
-          className="px-4 py-2  focus:outline-none border-2 border-primary-custom-indigo-700 rounded-lg"
+          className="px-4 py-2  focus:outline-none border-2 border-primary-custom-indigo-700 rounded-lg w-80"
         />
       </div>
       <div className="flex flex-row gap-4 ">
